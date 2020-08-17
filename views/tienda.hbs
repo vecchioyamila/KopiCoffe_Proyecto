@@ -1,0 +1,40 @@
+<section class="section-header bg-1">
+  <div class="container">	
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h1 class="text-capitalize mb-4 font-lg text-white">Tienda</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section menu-3" id="products">
+	<div class="container">
+		<div class="row  justify-content-center mb-5">
+			<div class="col-lg-8 text-center">
+				<span class="text-primary font-extra font-md">Tienda Online</span>
+				<h3 class="mt-3 mb-4">Todos tus productos preferidos</h3>
+			</div>
+		</div>
+		
+		{{!-- Color
+		#16a085 --}}
+
+		<div class="row ">
+			{{#each products}}
+				<div class="col-lg-4 col-md-6 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="00">
+					<div class="card border-0 menu-item3">
+						<img src="/{{image}}" alt="" class="img-fluid">
+						<div class="card-body">
+							<h3 class="card-title"><a href="/tienda/single/{{id}}">{{product_name}} -</a><span class="text-primary"> ${{price}}</span></h3>
+							<p>{{description}}</p>
+							<a href="/carritoCompras/alta/{{id}}/{{price}}" class="btn btn-main mt-2 rounded">Agregar</a>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</section>
