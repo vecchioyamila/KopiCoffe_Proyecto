@@ -47,7 +47,7 @@ body {
 }
 
 p {
-  color: #7e8690;
+  color: #fff;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -1059,11 +1059,11 @@ textarea.form-control {
 }
 
 .footer-btm {
-  background: #121212;
+  background: #067560;
 }
 
 .footer-menu ul li a {
-  color: #8f9397;
+  color: #babec2;
 }
 
 .footer-menu ul li a:hover {
