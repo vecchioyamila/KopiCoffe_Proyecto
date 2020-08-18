@@ -85,6 +85,14 @@ h6, .h6 {
   font-size: 14px;
 }
 
+table th {
+  text-align: center;
+}
+
+table tr {
+  text-align: center;
+}
+
 .text-sm {
   font-size: 14px;
 }
