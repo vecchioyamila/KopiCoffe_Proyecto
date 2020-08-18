@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getCarrito, agregarItem, puedoAgregarItem, eliminarItem, eliminarCant, getProductoCarrito} = require('../models/carritoCompras');
+const {getCarrito, agregarItem, puedoAgregarItem, eliminarItem} = require('../models/carritoCompras');
 
 router.get("/", async (req, res) => {
     try {
@@ -22,7 +22,7 @@ router.get("/", async (req, res) => {
         // }
     } catch (error) {
         console.log(error);
-    }
+  }
 });
 
 router.get("/alta/:id/:price", async (req, res) => {
@@ -44,8 +44,6 @@ router.get("/alta/:id/:price", async (req, res) => {
   } catch (error) {
       console.log(error);
   }
-  
- 
 });
 
 router.get("/baja/:id", async (req, res) => {
@@ -60,26 +58,7 @@ router.get("/baja/:id", async (req, res) => {
       // }
     } catch (error) {
         console.log(error);
-    }
-    
-   
-  });
-  // router.get("/baja/cantidad/:id", async(req, res) => {
-  //     try {
-  //       if(req.session.iniciado == true){
-  //           const {id} = req.params;
-  //           const producto = await getProductoCarrito(id);
-  //           var cantidadFinal = producto[0].cantidad-1;
-  //           var precioFinal = (producto[0].precio/producto[0].cantidad)*cantidadFinal;
-  //           const result = await eliminarCant(precioFinal, cantidadFinal, id);
-  //           res.redirect("/carritoCompras");
-  //       }
-  //       else{
-  //           res.send("Inicie sesion para ver el carrito");
-  //       }
-  //     } catch (error) {
-  //         console.log(error);
-  //     }
-  // });
+  }
+});
 
 module.exports = router;

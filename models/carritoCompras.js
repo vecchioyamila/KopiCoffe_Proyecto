@@ -43,28 +43,9 @@ const eliminarItem = async (id) => {
     return await pool.query(query, params);
 };
 
-// const eliminarCant = async(precio, cantidad, id) => {
-//     const query = "UPDATE ?? SET precio = ? cantidad = ? WHERE id = ?"
-//     const params = [process.env.TABLA_SALES_ITEMS, precio, cantidad, id];
-//     return await pool.query(query, params);
-// };
-
-// const getProductoCarrito = async(id) => {
-//     try {
-//         const query = "SELECT * FROM ?? WHERE id = ?";
-//         const params = [process.env.TABLA_SALES_ITEMS, id];
-//         const rows = await pool.query(query, params);
-//         return rows;
-//     } catch (error) {
-//         console.log(error)
-//     }
-// };
-
 module.exports = {
     agregarItem,
     eliminarItem,
     getCarrito,
-    puedoAgregarItem,
-    // eliminarCant,
-    // getProductoCarrito
+    puedoAgregarItem
 };

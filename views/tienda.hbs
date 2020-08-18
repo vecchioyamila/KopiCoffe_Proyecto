@@ -25,11 +25,12 @@
 		<div class="row ">
 			{{#each products}}
 				<div class="col-lg-4 col-md-6 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="00">
-					<div class="card border-0 menu-item3">
-						<img src="/{{image}}" alt="" class="img-fluid">
+					<div class="card border-0">
+						<div><img src="/{{image}}" alt="" class="img-fluid justify-content-center" !important></div>
 						<div class="card-body">
-							<h3 class="card-title"><a href="/tienda/single/{{id}}">{{product_name}} -</a><span class="text-primary"> ${{price}}</span></h3>
+							<h3 class="card-title"><a href="/tienda/single/{{id}}">{{product_name}}</a></h3>
 							<p>{{description}}</p>
+							<h3 style="color: #16a085;" !important> ${{price}}</h3>
 							<a href="/carritoCompras/alta/{{id}}/{{price}}" class="btn btn-main mt-2 rounded">Agregar</a>
 						</div>
 					</div>
