@@ -24,14 +24,16 @@
               <th scope="col">Eliminar producto</th>
             </tr>
           </thead>
-            {{#each salesitems}} 
+          {{#each salesitems}} 
           <tbody>
             <tr>
               <th scope="row">{{product_name}}</th>
               <td>$ {{price}}</td>
-              <td><div class="input-group bootstrap-touchspin bootstrap-touchspin-injected">
-                      <input class="quantity" type="text" value="1" name="quantity">
-                    </div></td>
+              <td>
+                <div class="input-group bootstrap-touchspin bootstrap-touchspin-injected">
+                  <input class="quantity" type="text" value="1" name="quantity">
+                </div>
+              </td>
               <td>
                 <a href="/carritoCompras/baja/{{id_product}}">
                   <i class="far fa-trash-alt fa-lg"></i>
@@ -39,7 +41,7 @@
               </td>
             </tr>
           </tbody>
-            {{/each}}
+          {{/each}}
         </table>
         <div class=" row align-items-center justify-content-center">
             <a href="/payment" class="btn btn-main confirm-btn mt-3 mt-lg-0">Terminar compra</a>

@@ -110,9 +110,9 @@ h6, .h6 {
 }
 
 .btn-main {
-  background: #e7272d;
+  background: #16a085;
   color: #fff;
-  border-color: #e7272d;
+  border-color: #16a085;
 }
 
 .btn-main:hover {
@@ -128,8 +128,8 @@ h6, .h6 {
 }
 
 .btn-white:hover {
-  border-color: #e7272d;
-  background: #e7272d;
+  border-color: #16a085;
+  background: #16a085;
   color: #fff;
 }
 
@@ -140,8 +140,8 @@ h6, .h6 {
 }
 
 .btn-black:hover {
-  border-color: #e7272d;
-  background: #e7272d;
+  border-color: #16a085;
+  background: #16a085;
   color: #fff;
 }
 
@@ -158,14 +158,14 @@ h6, .h6 {
 }
 
 .btn-main-border {
-  border-color: #e7272d;
+  border-color: #16a085;
   background: transparent;
   color: #111;
 }
 
 .btn-main-border:hover {
-  border-color: #e7272d;
-  background: #e7272d;
+  border-color: #16a085;
+  background: #16a085;
   color: #fff;
 }
 
@@ -200,11 +200,11 @@ h6, .h6 {
 }
 
 .bg-primary {
-  background: #e7272d !important;
+  background: #16a085 !important;
 }
 
 .text-primary {
-  color: #e7272d !important;
+  color: #16a085 !important;
 }
 
 .font-extra {
@@ -232,7 +232,7 @@ a {
 }
 
 a:hover {
-  color: #e7272d;
+  color: #16a085;
 }
 
 .text-md-2 {
@@ -373,7 +373,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 35%;
-  background: #e7272d;
+  background: #16a085;
   -webkit-transform: scale3d(1, 0, 1);
           transform: scale3d(1, 0, 1);
   -webkit-transform-origin: 50% 100%;
@@ -402,7 +402,7 @@ ul.dropdown-menu {
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
-  border-top: 2px solid #e7272d;
+  border-top: 2px solid #16a085;
 }
 
 ul.dropdown-menu > li > a,
@@ -422,7 +422,7 @@ ul.dropdown-menu > li > a,
 
 ul.dropdown-menu > li > a:hover,
 .navbar ul ul ul.dropdown-menu li .nav-link:hover {
-  background: #e7272d;
+  background: #16a085;
   color: #fff;
 }
 
@@ -598,7 +598,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .booking {
-  background: #e7272d;
+  background: #16a085;
   color: #fff;
   padding: 10px 90px 10px 30px;
   margin-left: -116px;
@@ -628,7 +628,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .service-item:hover i {
-  color: #e7272d;
+  color: #16a085;
 }
 
 .letter-spacing-2 {
@@ -652,7 +652,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .chef-item ul li i:hover {
-  background: #e7272d;
+  background: #16a085;
   color: #fff;
 }
 
@@ -681,7 +681,7 @@ ul.dropdown-menu > li > a:hover,
   top: 50%;
   left: 50%;
   z-index: 2;
-  background: #e7272d;
+  background: #16a085;
   padding: 4px 20px;
   color: #fff;
   -webkit-transform: translate(-50%, -50%);
@@ -727,8 +727,8 @@ ul.dropdown-menu > li > a:hover,
 .btn-download:hover {
   outline: 0;
   color: #fff;
-  background: #e7272d;
-  border-color: #e7272d;
+  background: #16a085;
+  border-color: #16a085;
 }
 
 .btn-download:hover .btn-text span {
@@ -746,8 +746,8 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .btn-download.active:hover {
-  background: #e7272d;
-  border-color: #e7272d;
+  background: #16a085;
+  border-color: #16a085;
 }
 
 .menu {
@@ -759,7 +759,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .menu .btn.active {
-  color: #e7272d;
+  color: #16a085;
 }
 
 .menu .btn-group .btn {
@@ -806,7 +806,7 @@ ul.dropdown-menu > li > a:hover,
 
 .menu-item span {
   font-weight: 600;
-  color: #e7272d;
+  color: #16a085;
 }
 
 .text-sm {
@@ -888,8 +888,8 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .video-item .videoplay:hover i {
-  background: #e7272d;
-  border-color: #e7272d;
+  background: #16a085;
+  border-color: #16a085;
 }
 
 @media (max-width: 575px) {
@@ -913,12 +913,12 @@ ul.dropdown-menu > li > a:hover,
 
 .form-control:hover {
   box-shadow: none;
-  border-color: #e7272d;
+  border-color: #16a085;
 }
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #e7272d;
+  border-color: #16a085;
 }
 
 textarea.form-control {
@@ -965,7 +965,7 @@ textarea.form-control {
 }
 
 .close:hover {
-  color: #e7272d;
+  color: #16a085;
 }
 
 .quantity {
@@ -1031,7 +1031,7 @@ textarea.form-control {
 }
 
 #contact-form .form-control:hover {
-  border-color: #e7272d;
+  border-color: #16a085;
   background: transparent;
 }
 
@@ -1067,7 +1067,7 @@ textarea.form-control {
 }
 
 .footer-menu ul li a:hover {
-  color: #e7272d;
+  color: #16a085;
 }
 
 .footer-newsletter .form-group .button {
@@ -1091,7 +1091,7 @@ textarea.form-control {
 }
 
 .footer-socials li a:hover {
-  color: #e7272d;
+  color: #16a085;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
