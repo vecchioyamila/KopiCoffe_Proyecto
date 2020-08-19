@@ -4,22 +4,22 @@ const {getCarrito, agregarItem, puedoAgregarItem, eliminarItem} = require('../mo
 
 router.get("/", async (req, res) => {
     try {
-        // if(req.session.iniciado == true){
-          // let id_usuario = req.session.userId;
-          const salesitems = await getCarrito(); //array de jsons, cada item es un producto  
+        if(req.session.iniciado == true){
+          let id_usuario = req.session.userId;
+          const salesitems = await getCarrito(); // Array de jsons, cada item es un producto  
 
-          let carritoPrecioFinal = 0 //var aux q guarda el precio total de todo lo q voy a comprar
-          if(salesitems) {
-            salesitems.forEach(item => {
-              carritoPrecioFinal = carritoPrecioFinal + item.precio;
-            });
-          }
+          let carritoPrecioFinal = 0 // Variable auxiliar que guarda el precio total de todo lo que voy a comprar
+        if(salesitems) {
+          salesitems.forEach(item => {
+            carritoPrecioFinal = carritoPrecioFinal + item.precio;
+          });
+        }
           console.log(carritoPrecioFinal);
           res.render("carritoCompras", { salesitems, carritoPrecioFinal });
-        // }
-        // else{
-        //     res.send("Inicie sesion para ver el carrito");
-        // }
+        }
+        else{
+            res.send("Inicie sesion para ver el carrito");
+        }
     } catch (error) {
         console.log(error);
   }
@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
 
 router.get("/alta/:id/:price", async (req, res) => {
   try {
-    // if(req.session.iniciado == true){
+      if(req.session.iniciado == true){
       const { id, price } = req.params;
       const validation = await puedoAgregarItem(id);
       if(validation) {
@@ -35,12 +35,13 @@ router.get("/alta/:id/:price", async (req, res) => {
         const result = await agregarItem(id, price);
         res.redirect("/carritoCompras");
       } else {
-        res.send("Este producto ya fue agregado al carrito");
+       
+        // res.send("Este producto ya fue agregado al carrito");
       } 
-    // }
-    // else{
-    //     res.send("Inicie sesion para ver el carrito");
-    // }
+    }
+      else{
+          res.send("Inicie sesion para ver el carrito");
+      }
   } catch (error) {
       console.log(error);
   }
@@ -48,14 +49,14 @@ router.get("/alta/:id/:price", async (req, res) => {
 
 router.get("/baja/:id", async (req, res) => {
     try {
-      // if(req.session.iniciado == true){
+      if(req.session.iniciado == true){
         const { id } = req.params;
         const result = await eliminarItem(id);
         res.redirect("/carritoCompras");
-      // }
-      // else{
-      //     res.send("Inicie sesion para ver el carrito");
-      // }
+      }
+      else{
+          res.send("Inicie sesion para ver el carrito");
+      }
     } catch (error) {
         console.log(error);
   }
