@@ -21,11 +21,11 @@ router.post("/", async (req, res) => {
 console.log(finalObject);
 
 const resultMail = await main({to,subject,html});
+console.log(resultMail);
 to = email;
 html = htmlCustumer;
 const resultMailCustumer = await main({to,subject,html});
-console.log(resultMail);
-console.log(resultMailCustomer);
+console.log(resultMailCustumer);
 res.render("contacto",{ 
 message: "Mensaje enviado, en breve nos contactaremos",
 });
